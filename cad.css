@@ -1,0 +1,316 @@
+@charset "UTF-8";
+*
+{
+  margin: 2;
+  padding:-10px;
+  border-radius: 10px;
+  margin-bottom: auto;
+  top:50px;
+}
+body
+{
+  background-color: #100f16;
+  background-position: center;
+  background-size: 100%;
+  font-family: sans-serif;
+  margin-top: 2px;
+  color: rgb(250, 246, 250);
+}
+.registroformulario
+{
+  width: 703px;
+  background-color: rgb(9, 10, 10);
+  margin: auto;
+  color: #eef7ee;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  border-radius: 10px 10px 10px -8px;
+  box-shadow: inset 0 0 2em rgb(219, 219, 215), 0 0 1em rgb(228, 225, 225);
+}
+#caixa
+{
+  position:absolute;
+  padding: 10px;
+  margin: 10px;
+  left: 420px;
+  border-radius: 20px;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 680px;
+  border-color: rgb(245, 248, 244)
+}
+.conteudo
+{
+  background-color: rgba(116, 112, 112, 0.6);
+  width: 705px;
+  margin: 0px;
+  border: 2px;
+}
+form 
+{
+  padding: 6px;
+}
+#nome 
+{
+  width: 50%;
+  height: 35px;
+}
+.nome 
+{
+  margin-left: 15px;
+  margin-top: 18px;
+  width: 123px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nomecompleto
+{
+  margin-left: 15px;
+  position: relative;
+  left: 153px;
+  top: -35px;
+  line-height: 15px;
+  width: 500px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.CEP
+{
+  font-size: 16px;
+  position: relative;
+  left: 18px;
+  top: 58px;
+}
+.CEP_NUN 
+{
+  margin-left: 15px;
+  position: relative;
+  left: 151px;
+  top: 30px;
+  line-height: 20px;
+  width: 110px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.end
+{
+  font-size: 16px;
+  position: relative;
+  left: 20px;
+  top: 23px;
+}
+.Endereço_rua
+{
+  margin-left: 15px;
+  position: relative;
+  left: 153px;
+  top: 5px;
+  line-height: 20px;
+  width: 500px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.cid
+{
+  font-size: 16px;
+  position: relative;
+  left: 300px;
+  top: -88px;
+}
+.cidade
+{
+  margin-left: 14px;
+  position: relative;
+  left: 393px;
+  top: -118px;
+  line-height: 20px;
+  width: 130px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.tel_DDD
+{
+  font-size: 16px;
+  position: relative;
+  left: 16px;
+  top: -66px;
+}
+.codigo
+{
+  position: relative;
+  left: 167px;
+  top: -96px;
+  line-height: 20px;
+  width: 130px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.number
+{
+  position: relative;
+  left: 151px;
+  top: -96px;
+  line-height: 20px;
+  width: 305px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.Codigo_area
+{
+  position: relative;
+  text-transform: capitalize;
+  font-size: 16px;
+  left: 35px;
+  top: -67px;
+}
+.numero-telefone
+{
+  position: relative;
+  text-transform: capitalize;
+  font-size: 16px;
+  left: -150px;
+  top: -67px;
+}
+.email
+{
+  font-size: 16px;
+  left: 19px;
+  position: relative;
+  top: -78px;
+}
+.emailcontato
+{
+  position: relative;
+  left: 165px;
+  top: -108px;
+  line-height: 20px;
+  width: 500px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.login
+{
+  position: relative;
+  font-size: 16px;
+  top: -3px;
+  left: 168px;
+}
+.logar
+{
+  position: relative;
+  left: 165px;
+  top: -313px;
+  line-height: 20px;
+  width: 170px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.senha
+{
+  position: relative;
+  font-size: 16px;
+  top: -296px;
+  left: 18px;
+}
+.criar_senha
+{
+  position: relative;
+  left: 165px;
+  top: -326px;
+  line-height: 20px;
+  width: 170px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+.repetir
+{
+  position: relative;
+  font-size: 16px;
+  top: -370px;
+  left: 348px;
+}
+.repetirsenha
+{
+  position: relative;
+  left: 415px;
+  top: -400px;
+  line-height: 20px;
+  width: 170px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+} 
+.Sexo
+{
+ position: relative;
+ font-size:16px;
+ top: -380px;
+ left: 19px;
+}
+.opcoes
+{
+  position: relative;
+  left: 167px;
+  top: -404px;
+  line-height: 30px;
+  width: 185px;
+  height: 32px;
+  border-radius: 6px;
+  padding: 2px;
+  font-size: 16px;
+  color: #100f16;
+  outline: none;
+  overflow: hidden;
+}
+.opcoes option
+{
+  font-size: 16px;
+}
+.cpf
+{
+  font-size: 16px;
+  position: relative;
+  left: 19px;
+  top: -360px;
+}
+.dados
+{
+  position: relative;
+  left: 167px;
+  top: -390px;
+  line-height: 20px;
+  width: 180px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button
+{
+  position: absolute;
+  display: block;
+  background-color: #11e7c4;
+  top: 630px;
+  left: 450px;
+  margin: -0px 0px 0px -120px;
+  border-radius: 6px;
+  border: 2px solid #266473;
+  padding: 5px 30px;
+  outline: none;
+  color: rgb(253, 251, 251);
+  cursor: pointer;
+  transform: 0.25s;
+}
+button:hover
+{
+  background-color: rgb(223, 218, 218);
+}

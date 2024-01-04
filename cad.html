@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../startup linkaut/css/stilo.css"/>
+    <link rel="stylesheet" href="../startup linkaut/css/cad.css">
+    <title>Cadastro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.7.3/sql-wasm.js"></script>
+</head>
+<script lang="JavaScript" src="_javascript/funcoes.js"></script>
+<body>
+    <fieldset id="caixa">
+     <div class="registroformulario">Registro formulario</div>
+      <div class="conteudo">
+         <form>
+          <div id="nome">
+            <h2 class="nome"><ins>Nome Completo:</ins></h2>
+            <input class="nomecompleto"  type="text" name="nome_completo">
+          </div>  
+           <h2 class="CEP"><ins>CEP:</ins></h2>
+           <input class="CEP_NUN" type="text" name="CEP">
+          <h2 class="end"><ins>Endereço:</ins></h2>
+          <input class="Endereço_rua" type="text" name="Endereço">
+          <h2 class="cid"><ins>CIDADE:</ins></h2>
+          <input class="cidade" type="text" name="cidade">
+          <h2 class="tel_DDD"><ins>Telefone/DDD:</ins></h2>  
+          <input class="codigo" type="text" name="Codigo_area">
+          <label class="Codigo_area"><ins>DDD</ins></label>
+          <input class="number"type="text" name="phone">   
+          <label class="numero-telefone"><ins>Telefone</ins></label>
+          <h2 class="email"><ins>Email:</ins></h2>
+          <input class="emailcontato"type="text"     name="e_mail">
+          <label class="email_label"></label>
+          <h2 class="cpf"><ins>CPF/CNPJ:</ins></h2>
+          <input class="dados" type="numero" name="cpf_number">
+          <h2 class="login"><ins>Login:</ins></h2>
+          <input class="logar" type="nome" name="login_name">
+          <h2 class="senha"><ins>Senha:</ins></h2>
+          <input class="criar_senha" type="caractere" name="senha-login">
+          <h2 class="repetir"><ins>Repetir:</ins></h2>
+          <input class="repetirsenha" type="caractere" name="senha-senha">
+          <h2 class="Sexo"><ins>Sexo</ins></h2>
+          <select   class="opcoes"name="assunto">
+            <option disabled="disabled" selected>..selecione a opcão</option>
+            <option value="">Masculino</option>
+            <option value="">Feminino</option>
+          </select> 
+          <form id="myForm">
+            <!-- Seus campos de formulário aqui -->
+    
+            <button type="button" onclick="enviarForm()">Enviar</button>
+        </form>
+    
+        <script>
+            let db;
+    
+            function initDatabase() {
+                try {
+                    db = new SQL.Database();
+                    createTable();
+                } catch (e) {
+                    console.error("Erro ao inicializar o banco de dados: " + e.message);
+                }
+            }
+    
+            function createTable() {
+                try {
+                    let query = "CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT, email TEXT)";
+                    db.run(query);
+                    console.log("Tabela criada com sucesso!");
+                } catch (e) {
+                    console.error("Erro ao criar a tabela: " + e.message);
+                }
+            }
+    
+            function enviarForm() {
+                // Lógica para processar o formulário (inserir dados no banco, etc.)
+    
+                // Redirecionar para a página de login
+                window.location.href = "index.html";
+            }
+    
+            window.onload = initDatabase;
+        </script>
+    </form>
+  </fieldset>  
+  </div>
+</body>
+</html>
